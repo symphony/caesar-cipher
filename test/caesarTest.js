@@ -1,5 +1,5 @@
-const assert = require('chai').assert;
-const { encrypt } = require('../caesar');
+import { assert } from 'chai';
+import encrypt from '../caesar.js';
 
 describe("caesar.encrypt", () => {
   // tip: try to make this single test pass first, before implementing the whole thing
