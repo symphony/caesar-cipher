@@ -15,4 +15,6 @@ const encrypt = (plaintext, key) => {
 };
 
 // export default encrypt;
+
+// one line version
 export default (s, k) => s.split('').map((x) => x === ' ' ? x : String.fromCharCode((x.charCodeAt() + k - 97 + 26) % 26 + 97)).join('');
