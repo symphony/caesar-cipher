@@ -14,4 +14,6 @@ const encrypt = (plaintext, key) => {
   return plaintext.split('').map((char) => char === ' ' ? char : shiftChar(char, key)).join('');
 };
 
-export default encrypt;
+// export default encrypt;
+
+export default (s, k) => s.split('').map((x) => x === ' ' ? x : String.fromCharCode((x.charCodeAt() + k - 97 + 26) % 26 + 97)).join('');
